@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin name="yandex_analytics">
+	<title>Yandex Analytics</title>
+	<summary>Yandex Analytics Plugin</summary>
+	<author>Intelliants LLC</author>
+	<contributor>Intelliants LLC</contributor>
+	<version>3.3.0</version>
+	<date>2015-04-15</date>
+	<compatibility>3.3</compatibility>
+
+	<configgroup name="yandex_analytics">Yandex Analytics</configgroup>
+
+	<config group="yandex_analytics" name="yandex_metrica_divider" type="divider" description="Yandex Metrica">Yandex Metrica Settings</config>
+	<config group="yandex_analytics" name="yandex_metrica_code" type="textarea" description="Yandex Metrica code"><![CDATA[]]></config>
+	<config group="yandex_analytics" name="yandex_metrica_informer" type="radio" values="1,0" description="Show Informer">1</config>
+	<config group="yandex_analytics" name="yandex_webmaster_divider" type="divider" description="Yandex Webmaster">Yandex Webmaster Settings</config>
+	<config group="yandex_analytics" name="yandex_webmaster_meta" type="text" description="Yandex Webmaster's meta tag"><![CDATA[]]></config>
+
+	<hooks>
+		<hook name="smartyFrontAfterFooterLinks" page_type="front" filename="plugins/yandex_analytics/includes/hook.yandex_metrica.tpl" type="smarty"><![CDATA[]]></hook>
+		<hook name="smartyFrontAfterHeadSection" page_type="front" filename="plugins/yandex_analytics/includes/hook.yandex_webmaster.tpl" type="smarty"><![CDATA[]]></hook>
+	</hooks>
+</plugin>
