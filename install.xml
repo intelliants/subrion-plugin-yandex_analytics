@@ -4,9 +4,9 @@
 	<summary>Yandex Analytics Plugin</summary>
 	<author>Intelliants LLC</author>
 	<contributor>Intelliants LLC</contributor>
-	<version>3.3.0</version>
-	<date>2015-04-15</date>
-	<compatibility>3.3</compatibility>
+	<version>4.0.0</version>
+	<date>2016-07-07</date>
+	<compatibility>4.0</compatibility>
 
 	<configgroup name="yandex_analytics">Yandex Analytics</configgroup>
 
