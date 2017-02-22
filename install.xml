@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<plugin name="yandex_analytics">
+<module type="plugin" name="yandex_analytics">
 	<title>Yandex Analytics</title>
-	<summary>Yandex Analytics Plugin</summary>
+	<summary>Easy way to configure your website Yandex.Metrica</summary>
 	<author>Intelliants LLC</author>
 	<contributor>Intelliants LLC</contributor>
-	<version>4.0.0</version>
-	<date>2016-07-07</date>
-	<compatibility>4.0</compatibility>
+	<version>4.1.0</version>
+	<date>2017-02-22</date>
+	<compatibility>4.1</compatibility>
 
 	<configgroup name="yandex_analytics">Yandex Analytics</configgroup>
 
@@ -17,7 +17,7 @@
 	<config group="yandex_analytics" name="yandex_webmaster_meta" type="text" description="Yandex Webmaster's meta tag"><![CDATA[]]></config>
 
 	<hooks>
-		<hook name="smartyFrontAfterFooterLinks" page_type="front" filename="plugins/yandex_analytics/includes/hook.yandex_metrica.tpl" type="smarty"><![CDATA[]]></hook>
-		<hook name="smartyFrontAfterHeadSection" page_type="front" filename="plugins/yandex_analytics/includes/hook.yandex_webmaster.tpl" type="smarty"><![CDATA[]]></hook>
+		<hook name="smartyFrontAfterFooterLinks" page_type="front" filename="hook.yandex_metrica" type="smarty"><![CDATA[]]></hook>
+		<hook name="smartyFrontAfterHeadSection" page_type="front" filename="hook.yandex_webmaster" type="smarty"><![CDATA[]]></hook>
 	</hooks>
-</plugin>
+</module>
